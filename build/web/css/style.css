@@ -1,0 +1,43 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 4 déc. 2022, 10:47:05
+    Author     : pc
+*/
+button {
+    border: none;
+    background-color: transparent;
+}
+html, body {
+    height: 100;
+}
+.full-height {
+    height: calc(100% - 57px);
+    width: 200px;
+    position: absolute;
+}
+
+.content {
+    width: calc(100% - 200px);
+    padding: 1rem;
+    float: right;
+}
+.login {
+    width: 100%;
+    padding: 1rem 8rem;
+}
+.form {
+    width: calc(100% - 200px);
+    padding: 1rem 8rem;
+    float: right;
+}
+.table-container {
+    width: calc(100% - 200px);
+    padding: 1rem 1rem;
+    float: right;
+}
+.hiden {
+    display: none;
+}

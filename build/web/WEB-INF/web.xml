@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
+    <jsp-config>
+        
+        <jsp-property-group>
+            <url-pattern>/index.jsp</url-pattern>
+            <include-prelude>/WEB-INF/jstl.jsp</include-prelude>
+        </jsp-property-group>
+        <jsp-property-group>
+            <url-pattern>/controllers/clientController.jsp</url-pattern>
+            <url-pattern>/controllers/articleController.jsp</url-pattern>
+            <url-pattern>/controllers/factureClient.jsp</url-pattern>
+            <url-pattern>/controllers/factureController.jsp</url-pattern>
+            <url-pattern>/controllers/factureController2.jsp</url-pattern>
+            <include-prelude>/WEB-INF/controller.jsp</include-prelude>
+        </jsp-property-group>
+        <jsp-property-group>
+            <url-pattern>/controllers/loged.jsp</url-pattern>
+            <url-pattern>/controllers/logout.jsp</url-pattern>
+
+            <url-pattern>/models/clientModel.jsp</url-pattern>
+            <url-pattern>/models/articleModel.jsp</url-pattern>
+            <url-pattern>/models/factureModel.jsp</url-pattern>
+            <url-pattern>/models/factureModel2.jsp</url-pattern>
+            <url-pattern>/models/import.jsp</url-pattern>
+
+            <url-pattern>/views/login.jsp</url-pattern>
+            <include-prelude>/WEB-INF/jstl.jsp</include-prelude>
+        </jsp-property-group>
+
+        <jsp-property-group>
+            <url-pattern>/views/home.jsp</url-pattern>
+            <url-pattern>/views/articleForm.jsp</url-pattern>
+            <url-pattern>/views/clientForm.jsp</url-pattern>
+            <url-pattern>/views/factureForm.jsp</url-pattern>
+            <url-pattern>/views/import.jsp</url-pattern>
+            <url-pattern>/views/client.jsp</url-pattern>
+            <url-pattern>/views/article.jsp</url-pattern>
+            <url-pattern>/views/facture.jsp</url-pattern>
+
+            <include-prelude>/WEB-INF/jstlLib.jsp</include-prelude>
+        </jsp-property-group>
+        
+    </jsp-config>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
